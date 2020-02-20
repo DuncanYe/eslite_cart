@@ -6,12 +6,11 @@ class User < ApplicationRecord
 
   enum role: {
     normal: "normal",
-    admin: "admin",
-    superman: "superman"
+    admin: "admin"
   }
 
   def admin?
-    role != "normal"
+    role == "admin"
   end
 
 end
