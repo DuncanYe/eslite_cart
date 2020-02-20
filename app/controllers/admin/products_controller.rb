@@ -23,7 +23,6 @@ class Admin::ProductsController < Admin::BaseController
   end
 
   def update
-    authorize [:admin, @product]
     if @product.update(product_params)
       redirect_back(fallback_location: admin_products_path, notice: "商品更新成功")
     else
@@ -44,7 +43,7 @@ class Admin::ProductsController < Admin::BaseController
   end
 
   def product_params
-    params.require(:product).permit(:title, :description, :price, :vendor_id, :state, :tag_list)
+    params.require(:product).permit(:name, :desc, :state, :original_price, :sell_price, :category_id, :sku)
   end
 
   
