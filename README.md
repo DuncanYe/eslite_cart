@@ -1,24 +1,16 @@
-# README
+# 說明
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Ruby Version  2.6.3
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+```
+已依照文件 User Case 實做完成。
 
-* Configuration
+增加事項
+1. 檢查「售價」不可大過「原價」
+1. 前台只顯示「上架商品」
 
-* Database creation
 
-* Database initialization
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
