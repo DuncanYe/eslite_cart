@@ -16,7 +16,7 @@
       <td><%= product.original_price %></td>
       <td><%= product.sell_price %></td>
       <td><%= product.sku %></td>
-      <td><%= product.state %></td>
+      <td><%= I18n.t("product_state.#{product.state}") %></td>
     </tr>
     <% end %>
   </tbody>

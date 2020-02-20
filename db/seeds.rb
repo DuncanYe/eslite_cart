@@ -18,4 +18,5 @@
     state: Product.states.keys.sample,
     sku: rand(1...8)
   )
+  puts p.name
 end
