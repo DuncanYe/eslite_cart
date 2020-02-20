@@ -8,7 +8,8 @@
         </div>
         <div class="form-group">
           <%= f.label :state, "商品狀態" %>
-          <%= f.select(:state, options_for_select(Product::states, product.state), {}, { :class => 'form-control'}) %>
+
+          <%= f.select(:state, options_for_select(Product::states.keys[0..1], product.state ), {}, { :class => 'form-control'}) %>
         </div>
         <div class="form-group">
           <%= f.label :sku, "SKU" %>
@@ -33,4 +34,3 @@
     </div>
   </div>
 </div>
-          

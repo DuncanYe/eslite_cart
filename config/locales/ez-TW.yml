@@ -1,0 +1,5 @@
+zh-TW:
+  product_state:
+    on_sale: "上架"
+    discontinued: "下架"
+    purchasing: "進貨中"
