@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  scope :avalible_products, -> { where(state: ["on_sale", "purchasing"])}
+  scope :avalible_products, -> { where(state: ["on_sale"])}
   validates_numericality_of :original_price, :sell_price, only_integer: true, greater_than_or_equal_to: 0
   validate :check_product_price
 
