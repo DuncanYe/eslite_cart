@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   resources :products, only: [:index]
 
   namespace :admin do
-    resources :products
+    resources :products do
+      member do
+        delete :delete_attachment
+      end
+    end
     root "products#index"
   end
 
