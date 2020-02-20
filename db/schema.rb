@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_20_125515) do
+ActiveRecord::Schema.define(version: 2020_02_20_143401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_125515) do
     t.string "name"
     t.string "state"
     t.text "desc"
-    t.integer "sku"
+    t.string "sku"
     t.integer "category_id"
     t.integer "original_price", comment: "原價"
     t.integer "sell_price", comment: "售價"
